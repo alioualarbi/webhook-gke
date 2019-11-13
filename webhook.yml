@@ -43,7 +43,7 @@ spec:
           value: redis
         - name: REDIS_HOST
           value: redis:6379
-        image: fredsted/webhook.site
+        image: dockeralioua/http_request_tool
         name: webhook
         ports:
         - containerPort: 80
