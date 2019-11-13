@@ -4,6 +4,7 @@ metadata:
   name: webhook
   namespace: webhook
 spec:
+  type: NodePort
   ports:
   - name: "8084"
     port: 8084
