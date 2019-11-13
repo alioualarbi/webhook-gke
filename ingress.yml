@@ -7,13 +7,9 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: webhook.localhost
-    http:
+  - http:
       paths:
-      - path: /
+      - path: /*
         backend:
           serviceName: webhook
           servicePort: 8084
-  tls:
-  - hosts:
-    - webhook.localhost
