@@ -19,3 +19,8 @@ kubectl apply -f ./
 If you created your own namespace then you will need to remover the namespace entries in the files and the namespace.yml before you run the same command but specifing the namespace to use for deployment:
 ```
 kubectl apply -n <yournamespace> -f ./
+
+
+## POST EXAMPLE 
+curl -v -H "Content-Type: application/json" -X POST \
+     -d '{"name":"your name","phonenumber":"111-111"}'  { unique URL}
