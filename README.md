@@ -21,6 +21,7 @@ If you created your own namespace then you will need to remover the namespace en
 kubectl apply -n <yournamespace> -f ./
 
 
+
 ## POST EXAMPLE 
 curl -v -H "Content-Type: application/json" -X POST \
      -d '{"name":"your name","phonenumber":"111-111"}'  { unique URL}
